@@ -1,6 +1,6 @@
 # RBXServers Scraper
 
-A simple Roblox vip server scraper for retrieving active private servers from a given place ID using rbxservers.xyz.
+A simple Python Roblox vip server scraper for retrieving active private servers from a given place ID using rbxservers.xyz.
 
 ## 🚀 Quick Start
 
