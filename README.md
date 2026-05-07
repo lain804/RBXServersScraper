@@ -1,21 +1,21 @@
-# RBXServers Scraper
+# rbxservers.xyz scraper
 
-A simple Python Roblox vip server scraper for retrieving active private servers from a given place ID using rbxservers.xyz.
+A simple python roblox vip server scraper for retrieving active private servers from a given place id using rbxservers.xyz.
 
 ## 🚀 Quick Start
 
-clone the repository using
+### clone the repository using
 ```bash
 git clone https://github.com/lain804/rbxserverscraper.git
 ```
 
-### Option 1 — pip
+### option 1 - pip
 ```bash
 pip install -r requirements.txt
 python main.py
 ```
 
-### Option 2 - poetry
+### option 2 - poetry
 ```bash
 poetry install
 poetry run python main.py
