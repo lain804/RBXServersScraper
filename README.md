@@ -4,6 +4,11 @@ A simple Python Roblox vip server scraper for retrieving active private servers 
 
 ## 🚀 Quick Start
 
+clone the repository using
+```bash
+git clone https://github.com/lain804/rbxserverscraper.git
+```
+
 ### Option 1 — pip
 ```bash
 pip install -r requirements.txt
