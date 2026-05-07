@@ -2,7 +2,7 @@
 
 A simple python roblox vip server scraper for retrieving active private servers from a given place id using rbxservers.xyz.
 
-## 🚀 Quick Start
+## quick start
 
 ### clone the repository using
 ```bash
