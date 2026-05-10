@@ -9,6 +9,8 @@ A simple roblox vip server scraper made in python for retrieving active private 
 git clone https://github.com/lain804/rbxserverscraper.git
 ```
 
+## downloading dependencies
+
 ### option 1 - pip
 ```bash
 pip install -r requirements.txt
