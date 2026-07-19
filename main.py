@@ -1,7 +1,7 @@
 from RBXServersScraper import ServerScraper, Server
 
 # steal a brainrot
-EXAMPLE_PLACE_ID = 109983668079237
+EXAMPLE_PLACE_ID = 8737899170
 
 scraper = ServerScraper(EXAMPLE_PLACE_ID)
 

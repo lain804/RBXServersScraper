@@ -5,7 +5,7 @@ import json
 
 DATA_SCRIPT_TAG_ID = "__NEXT_DATA__"
 FETCH_LINK_ENDPOINT = "https://api.rbxservers.xyz/servers/v2/fetch-link"
-HTML_PARSER = "lxml"
+HTML_PARSER = "html.parser"
 
 class Server:
     def __init__(self,server_id,place_id):
@@ -47,6 +47,7 @@ class ServerScraper:
 
     def get_servers(self) -> list[Server]:
         r = requests.get(f"https://rbxservers.xyz/games/{self.place_id}")
+        r.raise_for_status()
 
         soup = BeautifulSoup(r.text,HTML_PARSER)
 
@@ -58,9 +59,9 @@ class ServerScraper:
 
         data:dict = server_data["props"]["pageProps"]["data"]
 
-        servers.extend(data.get("servers",[]))
-        servers.extend(data.get("community_servers",[]))
-        servers.extend(data.get("official_servers",[]))
+        servers.extend(data.get("servers",[]) or [])
+        servers.extend(data.get("community_servers",[]) or [])
+        servers.extend(data.get("official_servers",[]) or [])
 
         servers = [Server(server["id"], self.place_id) for server in servers]
 
