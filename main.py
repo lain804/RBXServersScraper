@@ -10,4 +10,4 @@ servers:list[Server] = scraper.get_servers()
 print(f"got {len(servers)} servers!")
 
 for server in servers:
-    print(server.get_link())
+    print(server.get_link(EXAMPLE_PLACE_ID))
